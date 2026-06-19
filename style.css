@@ -29,10 +29,10 @@ body{
 }
 
 .main-content{
-    height: 90vh;
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
+    padding: 40px;
 }
 /* profile section */
 
@@ -96,4 +96,163 @@ body{
 
 .phone{
     margin-bottom: 15px;
+}
+
+/* social media */
+
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.social img{
+    height: 24px;
+    width:24px;
+    margin: left 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+
+.social img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+
+
+/*main content */
+
+/*navigation*/
+
+#navigation{
+   
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    }
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;  
+}    
+
+nav a{
+    color: #a0a0a0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+}
+
+.active,nav a:hover{
+    color: #FFBF00;
+}
+
+/* about section */
+
+.heading{
+    font-size: 2rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+    
+}
+
+#about{
+    margin-bottom:40px ;
+}
+
+/*skills section */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid i#3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease,boxshadow 0.3s ease;
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    border-color: #FFBF00;
+    box-shadow:0px 0px 10px 5px rgba(0 ,0,0,0.3);
+}
+
+/* education section */
+#education{
+    margin-top: 20px;
+}
+
+.year{
+    font-weight:0.9rem;
+    color: #FFBF00;
+    margin-bottom: 5px;
+}
+
+.degree{
+    font-weight: 500;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.college{
+    font-style:italic;
+    color:#a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative
+}
+
+.goal{
+    height: 15px;
+    width: 15px;
+    border : 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left:0px;
 }
